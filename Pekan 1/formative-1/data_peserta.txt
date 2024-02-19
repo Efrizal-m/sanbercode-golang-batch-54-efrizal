@@ -1,0 +1,11 @@
+Data Peserta Bootcamp Digital Skill - Golang Backend Development
+1. Nama: Efrizal
+2. Email: efrizalsy0424@gmail.com
+3. Sistem Operasi yang digunakan: Linux Ubuntu
+4. Akun Github: https://github.com/Efrizal-m
+5. Akun Telegram: https://t.me/efrizalm
+6. Role Pekerjaan (BE/FE/DEVOPS/MAHASISWA) : BE
+7. Umur: 29
+8. Pernah menggunakan Go? : Pernah
+9. Bahasa Pemrograman yg pernah dipelajari: Javascript, Typescript, Go, Python, Ruby, Rust
+10. Pernah membuat REST API? : Pernah
