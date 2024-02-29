@@ -50,6 +50,25 @@ func (p *phone) addColor(color string) (result string) {
 	return result
 }
 
+// untuk soal 4
+type movie struct {
+	Title    string
+	Duration int
+	Genre    string
+	Year     int
+}
+
+func tambahDataFilm(title string, duration int, genre string, year int, dataFilm *[]movie) {
+	newMovie := movie{
+		Title:    title,
+		Duration: duration,
+		Genre:    genre,
+		Year:     year,
+	}
+
+	*dataFilm = append(*dataFilm, newMovie)
+}
+
 func main() {
 	//soal 1
 	type buah struct {
@@ -83,13 +102,18 @@ func main() {
 	fmt.Println(resultColor)
 
 	//soal 4
-	// var dataFilm = []movie{}
-	// tambahDataFilm("LOTR", 120, "action", 1999, &dataFilm)
-	// tambahDataFilm("avenger", 120, "action", 2019, &dataFilm)
-	// tambahDataFilm("spiderman", 120, "action", 2004, &dataFilm)
-	// tambahDataFilm("juon", 120, "horror", 2004, &dataFilm)
+	var dataFilm = []movie{}
+	tambahDataFilm("LOTR", 120, "action", 1999, &dataFilm)
+	tambahDataFilm("avenger", 120, "action", 2019, &dataFilm)
+	tambahDataFilm("spiderman", 120, "action", 2004, &dataFilm)
+	tambahDataFilm("juon", 120, "horror", 2004, &dataFilm)
+
+	for i, film := range dataFilm {
+		fmt.Printf("%d.\n", i+1)
+		fmt.Printf("Title: %s\n", film.Title)
+		fmt.Printf("Duration: %d minutes\n", film.Duration)
+		fmt.Printf("Genre: %s\n", film.Genre)
+		fmt.Printf("Year: %d\n", film.Year)
+		fmt.Println("------------------------------")
+	}
 }
-
-// func tambahDataFilm(judul string, duration int, )  {
-
-// }
