@@ -8,3 +8,5 @@ task 5: Function
 task 6: Pointer
 task 7: Struct dan Method
 task 8: Interface
+task 9: Package & Import
+task 10: Defer, Panic, Recover, Error, Goroutine dan Channel
