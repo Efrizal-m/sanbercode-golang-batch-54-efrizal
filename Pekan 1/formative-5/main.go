@@ -30,12 +30,20 @@ func main() {
 
 	// soal 4
 	var dataFilm = []map[string]string{}
-	var tambahDataFilm = func(title, duration, genre, tahun string) (result []map[string]string) {
-		result = append(result, map[string]string{"genre": genre, "jam": duration, "tahun": tahun, "title": title})
-		return result
+	tambahDataFilm := func(tittle, jam, genre, tahun string) {
+		film := map[string]string{
+			"tittle": tittle,
+			"jam":    jam,
+			"genre":  genre,
+			"tahun":  tahun,
+		}
+		dataFilm = append(dataFilm, film)
 	}
 
 	tambahDataFilm("LOTR", "2 jam", "action", "1999")
+	tambahDataFilm("avenger", "2 jam", "action", "2019")
+	tambahDataFilm("spiderman", "2 jam", "action", "2004")
+	tambahDataFilm("juon", "2 jam", "horror", "2004")
 
 	for _, item := range dataFilm {
 		fmt.Println(item)
