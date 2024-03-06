@@ -10,3 +10,5 @@ task 7: Struct dan Method
 task 8: Interface
 task 9: Package & Import
 task 10: Defer, Panic, Recover, Error, Goroutine dan Channel
+task 11: JSON data & Web Server
+task 12: Web Service API Server & Middleware
